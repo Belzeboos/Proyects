@@ -2,7 +2,11 @@
 FONDO GENERAL
 CAMBIAR fondo.jpg por tu imagen
 ======================================= */
-
+body{
+    background: url('../img/fondo.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+}
 
 /* Fondo blanco semitransparente en secciones */
 section, footer{
@@ -113,6 +117,50 @@ MENU LETRAS DE COLORES
     font-size: 1.3rem;
     margin-bottom: 10px;
 }
+
+.info-card-mision{
+    background: white;
+    padding: 20px;
+    border-radius: 18px;
+    margin-bottom: 18px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+.info-card-mision h3{
+    color: #ff9900;
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+.info-card-vision{
+    background: white;
+    padding: 20px;
+    border-radius: 18px;
+    margin-bottom: 18px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+.info-card-vision h3{
+    color: #33cc33;
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+.info-card-valores{
+    background: white;
+    padding: 20px;
+    border-radius: 18px;
+    margin-bottom: 18px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+.info-card-valores h3{
+    color: #ff66b3;
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+
 
 .info-card ul{
     padding-left: 20px;
