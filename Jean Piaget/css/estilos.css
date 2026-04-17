@@ -1,0 +1,77 @@
+/* =======================================
+FONDO GENERAL
+CAMBIAR fondo.jpg por tu imagen
+======================================= */
+body{
+    background: url('../img/fondo.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+}
+
+/* Fondo blanco semitransparente en secciones */
+section, footer{
+    background: rgba(255,255,255,0.90);
+}
+
+/* Navbar */
+.navbar{
+    padding: 0px;
+}
+
+/* =======================================
+MENU LETRAS DE COLORES
+======================================= */
+.nav-link{
+    font-family: 'Chewy', cursive;
+    font-size: 1.35rem;
+    margin-left: 10px;
+    font-weight: normal;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 0 rgba(0,0,0,0.15);
+    transition: transform 0.3s ease;
+}
+
+.nav-link:hover{
+    transform: scale(1.08);
+}
+
+/* Color por opción */
+.nav-item:nth-child(1) .nav-link{ color:#ff4d4d !important; }
+.nav-item:nth-child(2) .nav-link{ color:#ff9900 !important; }
+.nav-item:nth-child(3) .nav-link{ color:#33cc33 !important; }
+.nav-item:nth-child(4) .nav-link{ color:#3399ff !important; }
+.nav-item:nth-child(5) .nav-link{ color:#cc66ff !important; }
+.nav-item:nth-child(6) .nav-link{ color:#ff66b3 !important; }
+
+/* Carrusel */
+.slider-img{
+    height: 500px;
+    object-fit: cover;
+}
+
+@media(max-width:768px){
+    .slider-img{
+        height: 250px;
+    }
+}
+
+/* Colores */
+.texto-color{
+    color: #ff4da6;
+}
+
+/* Footer */
+.footer{
+    background: #222 !important;
+}
+
+.social{
+    color: white;
+    font-size: 28px;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.social:hover{
+    color: #ff4da6;
+}
