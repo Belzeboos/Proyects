@@ -175,3 +175,127 @@ MENU LETRAS DE COLORES
         margin-bottom: 30px;
     }
 }
+
+/* =======================================
+SECCION VISITANOS NUEVA (SIN AFECTAR OTRAS)
+======================================= */
+.jp-visitanos-section{
+    padding:60px 0;
+}
+
+.jp-visitanos-box{
+    background:white;
+    border-radius:25px;
+    padding:30px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.10);
+}
+
+.jp-titulo-visitanos{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    margin-bottom:20px;
+}
+
+.jp-titulo-visitanos i{
+    font-size:2.5rem;
+    color:#ff4d4d;
+}
+
+.jp-titulo-visitanos h1{
+    font-family:'Chewy', cursive;
+    font-size:2.5rem;
+    color:#3399ff;
+    margin:0;
+}
+
+.jp-domicilio{
+    font-size:1.2rem;
+    color:#444;
+    margin-bottom:25px;
+}
+
+.jp-mapa-box{
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 8px 18px rgba(0,0,0,0.12);
+}
+
+.jp-mapa-box iframe{
+    width:100%;
+    height:450px; /* CAMBIA TAMAÑO */
+    border:0;
+}
+
+/* =======================================
+GALERIA NUEVA
+======================================= */
+.jp-galeria-section{
+    padding:0;
+}
+
+.jp-galeria-box{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.jp-img-columna{
+    width:50%;
+    height:400px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    overflow:hidden;
+}
+
+.jp-img-columna img{
+    width:95%;
+    height:100%;
+    object-fit:cover;
+    border-radius:12px;
+}
+
+/* SOLO IMAGEN IZQUIERDA */
+.jp-img-columna:first-child img{
+    margin-left:4%;
+}
+
+/* =======================================
+RESPONSIVE SOLO NUEVO
+======================================= */
+@media(max-width:768px){
+
+    .jp-titulo-visitanos{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .jp-titulo-visitanos h1{
+        font-size:2rem;
+    }
+
+    .jp-domicilio{
+        text-align:center;
+        font-size:1rem;
+    }
+
+    .jp-mapa-box iframe{
+        height:320px;
+    }
+
+    .jp-img-columna{
+        width:100%;
+        height:250px;
+        margin-bottom:15px;
+    }
+
+    .jp-img-columna img{
+        width:95%;
+        margin:0;
+    }
+
+    .jp-img-columna:first-child img{
+        margin-left:0;
+    }
+}
