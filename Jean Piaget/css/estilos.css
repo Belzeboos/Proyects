@@ -262,7 +262,7 @@ GALERIA NUEVA
 }
 
 /* =======================================
-RESPONSIVE SOLO NUEVO
+RESPONSIVE
 ======================================= */
 @media(max-width:768px){
 
@@ -297,5 +297,143 @@ RESPONSIVE SOLO NUEVO
 
     .jp-img-columna:first-child img{
         margin-left:0;
+    }
+}
+
+/* =======================================
+CONTACTO NUEVO
+======================================= */
+
+/* IMAGEN SUPERIOR */
+.ct-top-banner img{
+    width:100%;
+    height:420px; /* CAMBIA ALTURA */
+    object-fit:contain;
+    background:white;
+   /*display:block;*/
+}
+
+/* TITULO */
+.ct-titulo-section{
+    padding:40px 0 20px;
+    text-align:center;
+}
+
+.ct-titulo{
+    font-family:'Chewy', cursive;
+    font-size:3rem;
+    color:#3399ff;
+    margin:0;
+}
+
+/* CUADRO INFORMACION */
+.ct-info-section{
+    padding:20px 0 70px;
+}
+
+.ct-box-info{
+    max-width:750px;
+    margin:auto;
+    background:white;
+    border-radius:25px;
+    padding:35px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.10);
+}
+
+.ct-item{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    font-size:1.2rem;
+    color:#444;
+    margin-bottom:22px;
+}
+
+.ct-item:last-child{
+    margin-bottom:0;
+}
+
+
+/*miniaturas de contacto*/
+.ct-item-1 i{
+    font-size:1.8rem;
+    color:#ff4d4d;
+    min-width:35px;
+}
+.ct-item-2 i{
+    font-size:1.8rem;
+    color:#030200;
+    min-width:35px;
+}
+.ct-item-3 i{
+    font-size:1.8rem;
+    color:#3399ff;
+    min-width:35px;
+}
+.ct-item-4 i{
+    font-size:1.8rem;
+    color:#f55bba;
+    min-width:35px;
+}
+
+
+
+
+
+/* BOTON WHATSAPP */
+.ct-whatsapp-btn{
+    position:fixed;
+    right:20px;
+    bottom:20px;
+    width:65px;
+    height:65px;
+    border-radius:50%;
+    background:#25D366;
+    color:white;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:2rem;
+    text-decoration:none;
+    box-shadow:0 8px 18px rgba(0,0,0,0.20);
+    z-index:9999;
+    transition:0.3s;
+}
+
+.ct-whatsapp-btn:hover{
+    transform:scale(1.08);
+    color:white;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+
+    .ct-top-banner img{
+        height:250px;
+    }
+
+    .ct-titulo{
+        font-size:2.1rem;
+    }
+
+    .ct-box-info{
+        padding:25px 20px;
+    }
+
+    .ct-item{
+        align-items:flex-start;
+        font-size:1rem;
+    }
+
+    .ct-item i{
+        font-size:1.5rem;
+    }
+
+    .ct-whatsapp-btn{
+        width:58px;
+        height:58px;
+        font-size:1.7rem;
+        right:15px;
+        bottom:15px;
     }
 }
