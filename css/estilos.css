@@ -180,7 +180,7 @@ MENU LETRAS DE COLORES
 SECCION VISITANOS NUEVA (SIN AFECTAR OTRAS)
 ======================================= */
 .jp-visitanos-section{
-    padding:60px 0;
+    padding:1px 0;
 }
 
 .jp-visitanos-box{
@@ -328,7 +328,7 @@ CONTACTO NUEVO
 
 /* CUADRO INFORMACION */
 .ct-info-section{
-    padding:20px 0 70px;
+    padding:20px 0 10px;
 }
 
 .ct-box-info{
