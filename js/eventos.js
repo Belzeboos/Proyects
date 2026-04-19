@@ -55,7 +55,9 @@ const eventos = {
         titulo: "Pascua",
         archivos: [
             "img/eventos/pascua/1.jpeg",
-            "img/eventos/pascua/2.jpeg"
+            "img/eventos/pascua/2.jpeg",
+            "img/eventos/pascua/3.jpeg",
+            "img/eventos/pascua/video.mp4"
         ]
     },
 
