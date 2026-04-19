@@ -1,6 +1,5 @@
 /* ======================================
 EVENTOS.JS
-Colegio Jean Piaget Ixtapa
 ====================================== */
 
 const eventos = {
@@ -45,7 +44,10 @@ const eventos = {
         titulo: "Mini Olimpiadas",
         archivos: [
             "img/eventos/olimpiadas/1.jpeg",
-            "img/eventos/olimpiadas/2.jpeg"
+            "img/eventos/olimpiadas/2.jpeg",
+            "img/eventos/olimpiadas/3.jpeg",
+            "img/eventos/olimpiadas/video1.mp4",
+            "img/eventos/olimpiadas/video2.mp4"
         ]
     },
 
