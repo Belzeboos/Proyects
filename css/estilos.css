@@ -556,3 +556,155 @@ EVENTOS
         padding:12px;
     }
 }
+
+/* =======================================
+SECCION NOTICIAS NUEVA
+CLASES UNICAS
+======================================= */
+
+.jpnewsx-section{
+    padding:130px 0 70px;
+}
+
+.jpnewsx-header{
+    text-align:center;
+    margin-bottom:45px;
+}
+
+.jpnewsx-header h1{
+    font-family:'Chewy', cursive;
+    font-size:3rem;
+    color:#3399ff;
+    margin-bottom:10px;
+}
+
+.jpnewsx-header p{
+    font-size:1.1rem;
+    color:#555;
+    margin:0;
+}
+
+/* TARJETAS */
+.jpnewsx-card{
+    background:#fff;
+    border-radius:25px;
+    overflow:hidden;
+    box-shadow:0 8px 20px rgba(0,0,0,0.10);
+    transition:0.3s;
+    height:100%;
+}
+
+.jpnewsx-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 14px 28px rgba(0,0,0,0.16);
+}
+
+.jpnewsx-card img{
+    width:100%;
+    height:230px;
+    object-fit:contain;
+    background:white;
+}
+
+
+.jpnewsx-body{
+    padding:22px;
+}
+
+.jpnewsx-date{
+    display:inline-block;
+    background:#ff9900;
+    color:#fff;
+    font-size:13px;
+    padding:6px 14px;
+    border-radius:20px;
+    margin-bottom:12px;
+}
+
+.jpnewsx-body h3{
+    font-size:1.3rem;
+    color:#222;
+    margin-bottom:10px;
+}
+
+.jpnewsx-body p{
+    color:#666;
+    font-size:15px;
+    margin-bottom:18px;
+}
+
+.jpnewsx-btn{
+    display:inline-block;
+    text-decoration:none;
+    background:#3399ff;
+    color:#fff;
+    padding:10px 18px;
+    border-radius:25px;
+    transition:0.3s;
+}
+
+.jpnewsx-btn:hover{
+    background:#1c73d8;
+    color:#fff;
+}
+
+/* RESPONSIVE */
+@media(max-width:991px){
+    .jpnewsx-section{
+        padding:120px 0 60px;
+    }
+}
+
+@media(max-width:768px){
+
+    .jpnewsx-section{
+        padding:110px 0 50px;
+    }
+
+    .jpnewsx-header h1{
+        font-size:2.2rem;
+    }
+
+    .jpnewsx-header p{
+        font-size:1rem;
+        padding:0 10px;
+    }
+
+    .jpnewsx-card img{
+        height:210px;
+    }
+
+    .jpnewsx-body{
+        padding:18px;
+    }
+}
+/* =======================================
+MODAL IMAGEN NOTICIAS
+======================================= */
+
+.jpnewsx-click{
+    cursor:pointer;
+}
+
+.jpmodal-box{
+    background:transparent;
+    border:none;
+    box-shadow:none;
+}
+
+.jpmodal-img{
+    width:100%;
+    max-height:85vh;
+    object-fit:contain;
+    border-radius:15px;
+}
+
+.modal-content{
+    background:transparent;
+}
+
+.btn-close{
+    background-color:white;
+    border-radius:50%;
+    opacity:1;
+}
