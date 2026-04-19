@@ -35,7 +35,9 @@ const eventos = {
         titulo: "Posada Navideña",
         archivos: [
             "img/eventos/posada/1.jpeg",
-            "img/eventos/posada/2.jpeg"
+            "img/eventos/posada/2.jpeg",
+            "img/eventos/posada/3.jpeg",
+            "img/eventos/posada/video.mp4"
         ]
     },
 
@@ -82,13 +84,15 @@ const eventos = {
     /* ======================================
     PARA AGREGAR MÁS EVENTOS:
 
-    nombrecarpeta: {
+    ,nuevoevento: {
         titulo: "Nuevo Evento",
         archivos: [
-            "img/eventos/nombrecarpeta/1.jpg",
-            "img/eventos/nombrecarpeta/2.jpg"
+            "img/eventos/nuevoevento/1.jpeg",
+            "img/eventos/nuevoevento/2.jpeg",
+            "img/eventos/nuevoevento/video.mp4"
         ]
-    },
+    }
+
     ====================================== */
 };
 
@@ -103,32 +107,54 @@ function mostrarEvento(nombre, boton){
         btn.classList.remove('active');
     });
 
-    /* ACTIVAR BOTON SELECCIONADO */
-    boton.classList.add('active');
+    /* ACTIVAR BOTON */
+    if(boton){
+        boton.classList.add('active');
+    }
 
     const data = eventos[nombre];
 
     /* CAMBIAR TITULO */
     document.getElementById("evjpNombre").innerText = data.titulo;
 
-    /* CREAR IMAGENES */
     let html = "";
 
     data.archivos.forEach((archivo, index)=>{
 
-        html += `
-        <div class="carousel-item ${index === 0 ? 'active' : ''}">
-            <img src="${archivo}" class="d-block w-100 evjp-img" alt="${data.titulo}">
-        </div>
-        `;
+        const extension = archivo.split('.').pop().toLowerCase();
+
+        /* SI ES VIDEO */
+        if(extension === "mp4" || extension === "webm" || extension === "ogg"){
+
+            html += `
+            <div class="carousel-item ${index === 0 ? 'active' : ''}">
+                <video class="d-block w-100 evjp-img" controls autoplay muted loop playsinline>
+                    <source src="${archivo}" type="video/mp4">
+                    Tu navegador no soporta video.
+                </video>
+            </div>
+            `;
+
+        }else{
+
+            /* SI ES IMAGEN */
+            html += `
+            <div class="carousel-item ${index === 0 ? 'active' : ''}">
+                <img src="${archivo}" class="d-block w-100 evjp-img" alt="${data.titulo}">
+            </div>
+            `;
+
+        }
+
     });
 
-    /* INSERTAR HTML */
+    /* INSERTAR SLIDES */
     document.getElementById("evjpSlides").innerHTML = html;
 
     /* REINICIAR CARRUSEL */
     const carousel = document.querySelector('#carouselEventos');
     const instancia = bootstrap.Carousel.getOrCreateInstance(carousel);
+
     instancia.to(0);
 }
 
